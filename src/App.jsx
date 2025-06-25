@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="font-sans text-gray-800">
+    <div className="font-Poppins text-gray-800">
       <Navbar />
       <div className="p-6">
         <Routes>

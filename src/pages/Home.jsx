@@ -17,7 +17,7 @@ const stats = [
 ];
 export default function Home() {
   return (
-    <section className="max-w-8xl mx-auto text-center">
+    <section className="max-w-8xl mx-auto text-center font-custom">
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img
           alt=""
@@ -48,7 +48,7 @@ export default function Home() {
             className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
           />
         </div>
-        <div className="mx-auto max-w-8xl px-6 lg:px-8">
+        <div className="mx-auto max-w-8xl px-6 lg:px-8 font-custom">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className=" animate-fadeIn text-5xl font-semibold tracking-tight text-white sm:text-6xl">
               From Author

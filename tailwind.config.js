@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+      custom:['"Poppins"','sans-serif']  
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },

@@ -9,16 +9,15 @@ const AboutTheBook = () => {
   return (
     <section className="max-w-2xl mx-auto p-10">
       <div className="grid md:grid-cols-1 gap-6 items-center">
-        
         {/* Book Image */}
         <img
           src="/images/book.jpg"
           alt="Book Cover"
           className="w-full rounded-2xl shadow-md"
         />
-<h2>
+        <h2 className="text-blue-600 font-bold mb-4 hover:underline">
           From Publisher:{" "}
-          <Link to="https://christianfaithpublishing.com/">
+          <Link to="https://christianfaithpublishing.com/" target="_blank">
             Christian Faith Publishing
           </Link>
         </h2>
