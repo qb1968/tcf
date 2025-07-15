@@ -10,7 +10,7 @@ const ImageContainer = () => {
           className="w-1/2 object-cover"
         />
         <img
-          src="/images/beach2.jpg"
+          src="/images/beach.jpg"
           alt="Image 2"
           className="w-1/2 object-cover"
         />

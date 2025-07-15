@@ -16,7 +16,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link to="/book" className="hover:underline">
-            Book
+           About The Book
           </Link>
         </li>
         <li>
