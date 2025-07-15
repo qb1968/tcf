@@ -31,18 +31,19 @@ const AboutTheBook = () => {
             during the author&#39;s 2+ year cancer battle, the book is an
             adventure and love story about understanding on wide range of
             subjects from leadership and living life well, to raising Godly kids and
-            building stronger relationships.
+            building stronger relationships.</p>
+            <p className="text-gray-700">
              The narrative delivers grounded
             biblical principles, with application, from proven business
             techniques such as The Caring Continuum (Philippians 2:4 CEB);
             leadership strategies including In Front, Not Above (Mathew 20:26
             NLT); life lessons such as Brilliant on the Basics (Psalm 19:7 ESV)
-            and 21 Steps to Being the Best Imperfect You (2 Timothy 2:15 GW).
-
+            and 21 Steps to Being the Best Imperfect You (2 Timothy 2:15 GW).</p>
+            <p className="text-gray-700">
             The author concludes with a challenge to come together, as God&#39;s
             family, to return our communities and nation to our kids at the
             levels of kindness, love and greatness our parents left for us by
-            living the Bible, not just reading it.
+            living the Bible, not just reading it.</p>
             {!isExpanded && (
               <span
                 className="inline text-blue-500 cursor-pointer ml-3"
@@ -66,17 +67,20 @@ const AboutTheBook = () => {
                 with Cancer and his Dad&#39;s unique path of building a Godly
                 Legacy to help anyone better handle the many issues life throws
                 at us. The pillars for his journey of Imperfect Happiness are
-                Scripture, the Life of Jesus, Prayer and Christian Music.
+                Scripture, the Life of Jesus, Prayer and Christian Music.</p>
+                <p>
                 The
                 Thirty Day Devotional challenge of living life for God&#39;s
                 purpose is designed to help readers pause, reflect and think
-                about what matters most in their life.
+                about what matters most in their life.</p>
+                <p>
                  The phrase &quot;Imperfect
                 Happiness&quot; represents life&#39;s challenges as we learn to
                 take the worry out of living by gaining greater Godly Wisdom and
                 God Confidence, while giving God more control. One of the most
                 important messages of IMPERFECT HAPPINESS is that living life
-                well with God is a skill which can be developed, simply.
+                well with God is a skill which can be developed, simply.</p>
+                <p>
                  IMPERFECT HAPPINESS is unique not only from
                 the underlying themes and practical biblical prompts, it can be
                 read multiple ways. The style connects the reader to relatable
