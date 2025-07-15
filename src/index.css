@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-sans;
+  background-color: #CBBD93; /* or font-custom if you used that name */
+}
 
- body { 
+
+
+ /* body { 
     font-family: "Poppins", sans-serif;
     background-color: #CBBD93;
     
-} 
+}  */
 
