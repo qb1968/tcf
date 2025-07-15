@@ -11,7 +11,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link to="/about" className="hover:underline">
-            About
+            Author
           </Link>
         </li>
         <li>

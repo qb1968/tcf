@@ -21,20 +21,23 @@ export default function BioSection() {
             optimization as a featured speaker, seminar leader and author. He
             has published over 100 articles on a wide range of business and
             leadership topics and is the lead author of the U.S. Government
-            Small Business Mobilization Planner. Designed to entertain and
+            Small Business Mobilization Planner. 
+            Designed to entertain and
             inform, IMPERFECT HAPPINESS is a positive story of hope, kindness
             and resilience using relatable examples of God&#39;s many resources
             to reduce anxiety, secure greater happiness and contentment. The
             author delivers grounded biblical principles in a variety of ways
             through business and leadership techniques, authentic life skills,
             to developing another generation of young people who know how to
-            effectively communicate and love Jesus. This inspirational memoir
+            effectively communicate and love Jesus.
+             This inspirational memoir
             features the positive lessons from his Dad&#39;s simple journey
             handling tragedy as he built a Godly Legacy, along with the learning
             opportunities from Terry&#39;s unique life experiences and failures;
             all woven through common sense ideas built on the foundation of
             authentic Prayer, Scripture, Traits of Jesus, Bible Studies and
-            Christian Music. The author&#39;s favorite bible verse is Psalm 19:7
+            Christian Music. 
+            The author&#39;s favorite bible verse is Psalm 19:7
             ESV - The law of the Lord is perfect, reviving the soul; the
             testimony of the Lord is sure, making wise the simple.
           </p>
