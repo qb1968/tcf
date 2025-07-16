@@ -144,7 +144,12 @@ export default function AboutTheBook() {
           </div>
           <div className="mt-8 text-center">
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl shadow transition-all duration-300">
-              Buy Now
+              <Link
+                to="https://buy.stripe.com/test_aFaeVe3TTa0T1242EoeZ201"
+                target="_blank"
+              >
+                Buy Now
+              </Link>
             </button>
           </div>
         </div>

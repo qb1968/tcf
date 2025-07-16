@@ -36,10 +36,10 @@ const NewsletterSubscription = () => {
     <div className="max-w-md mx-auto mt-16 px-4">
       <div className="bg-white p-8 rounded-2xl shadow-lg">
         <h2 className="text-2xl font-extrabold text-center mb-2">
-          Join Our Newsletter
+          Join Our Book Club
         </h2>
-        <p className="text-gray-600 text-center mb-6">
-          Stay updated with news, devotional inspiration, and special offers.
+        <p className="text-black text-bold text-center mb-6">
+          Get connected, Prayer Requests, Share Positive Stories, Updates and Special Offers.
         </p>
 
         {submitted ? (

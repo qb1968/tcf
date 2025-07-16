@@ -42,7 +42,7 @@ export default function Contact() {
       <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <div className="mb-6 text-center">
           <img
-            src="/images/beach3.jpg"
+            src="/images/water3.jpg"
             alt="Contact Banner"
             className="w-full h-52 object-cover rounded-lg mb-6"
           />

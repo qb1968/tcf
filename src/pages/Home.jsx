@@ -14,17 +14,11 @@ export default function Home() {
           className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
+        
 
         {/* Hero Content */}
         <div className="relative z-10 py-32 px-6 sm:px-12 text-center text-white">
-          <h1 className="text-4xl sm:text-6xl font-bold leading-tight mb-4 drop-shadow-lg">
-            Welcome to My World of Words
-          </h1>
-          <p className="text-lg sm:text-xl max-w-2xl mx-auto text-gray-200">
-            Explore my latest book, dive into stories that inspire, and connect
-            with my writing journey.
-          </p>
+         
         </div>
       </div>
 

@@ -15,7 +15,7 @@ const Footer = () => {
             About
           </a>
           <a href="/book" className="hover:text-white transition">
-            Book
+           About The Book
           </a>
           <a href="/contact" className="hover:text-white transition">
             Contact

@@ -10,7 +10,7 @@ const ImageCard = () => {
           IMPƎRFƎCT
         </h1>
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-900 tracking-wide">
-          – HAPPINESS –
+           HAPPINESS 
         </h1>
 
         {/* Subtitle */}
