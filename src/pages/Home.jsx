@@ -5,13 +5,13 @@ import UpcomingEventsCarousel from "../components/UpcomingEventsCarousel";
 
 export default function Home() {
   return (
-    <section className="max-w-7xl mx-auto font-custom text-gray-800">
+    <section className="max-w-7xl mx-auto font-custom text-gray-800 ">
       {/* Hero Section */}
-      <div className="relative isolate overflow-hidden bg-gray-900">
+      <div className="relative isolate overflow-hidden bg-gray-900 ">
         <img
           alt="Scenic beach background"
           src="/images/beach2.jpg"
-          className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+          className="absolute inset-0 -z-10 h-full w-full object-cover object-center "
         />
         {/* Overlay */}
         
