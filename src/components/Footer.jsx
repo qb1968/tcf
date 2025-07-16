@@ -1,28 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-600  py-8">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <div className="text-center md:text-left ">
-          <h2 className="text-lg font-semibold text-white hover:text-gray-800 underline">
-            Allison Web Consultants, LLC
+    <footer className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 py-8 border-t border-gray-600">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="text-center md:text-left">
+          <h2 className="text-base font-semibold text-gray-200 hover:text-white underline transition">
+            <Link to="https://allwebcon.com" target="_blank">Allison Web Consultants, LLC</Link>
           </h2>
-          <p className="text-sm text-white">
+          <p className="text-sm text-gray-400">
             &copy; {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
-        <div className="flex space-x-6 ">
-          <a href="/" className="text-white hover:text-gray-800">
+        <div className="flex flex-wrap justify-center gap-6 text-sm font-medium text-gray-300">
+          <a href="/" className="hover:text-white transition">
             Home
           </a>
-          <a href="/about" className="text-white hover:text-gray-800">
-            About
+          <a href="/about" className="hover:text-white transition">
+            Author
           </a>
-          <a href="/book" className="text-white hover:text-gray-800">
+          <a href="/book" className="hover:text-white transition">
             About The Book
           </a>
-          <a href="/contact" className="text-white hover:text-gray-800">
+          <a href="/contact" className="hover:text-white transition">
             Contact
           </a>
         </div>

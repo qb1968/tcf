@@ -37,7 +37,7 @@ export default function AboutTheBook() {
 
   const StarRating = ({ count }) => (
     <div
-      className="flex gap-0.5 text-yellow-500"
+      className="flex gap-0.5 text-yellow-400"
       aria-label={`${count} star rating`}
     >
       {Array(5)
@@ -49,22 +49,22 @@ export default function AboutTheBook() {
   );
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-20 font-custom">
+    <section className="bg-gradient-to-r from-gray-600 via-gray-8=700 to-gray-800 text-gray-100 min-h-screen py-16 px-6 font-custom max-w-6xl mx-auto rounded-xl">
       {/* Book Section */}
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div>
           <img
             src="/images/book.jpg"
             alt="Book Cover"
-            className="rounded-2xl shadow-xl w-full"
+            className="rounded-2xl shadow-2xl w-full"
           />
-          <h2 className="text-blue-600 font-semibold mt-4 text-center">
+          <h2 className="text-blue-400 font-semibold mt-4 text-center hover:underline">
             From Publisher:{" "}
             <Link
               to="https://christianfaithpublishing.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:text-blue-300"
             >
               Christian Faith Publishing
             </Link>
@@ -72,10 +72,10 @@ export default function AboutTheBook() {
         </div>
 
         <div>
-          <h2 className="text-4xl font-extrabold mb-6 text-gray-900">
+          <h2 className="text-4xl font-extrabold mb-6 text-gray-100">
             About the Book
           </h2>
-          <div className="space-y-4 text-gray-700 text-lg">
+          <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
             <p>
               IMPERFECT HAPPINESS is a thought-provoking and encouraging story
               highlighting God's many resources to live our best life. Written
@@ -94,7 +94,7 @@ export default function AboutTheBook() {
               kindness and greatness by living the Bible, not just reading it.
               {!isExpanded && (
                 <span
-                  className="inline text-blue-500 cursor-pointer ml-2 font-medium"
+                  className="inline text-blue-400 cursor-pointer ml-2 font-medium hover:underline"
                   onClick={handleToggle}
                 >
                   Read More
@@ -119,7 +119,7 @@ export default function AboutTheBook() {
                   well with God.
                 </p>
                 <p>Read it your way:</p>
-                <ul className="list-disc list-inside pl-4 space-y-1">
+                <ul className="list-disc list-inside pl-4 space-y-1 text-gray-300">
                   <li>Thirty Bible studies and a glossary of terms</li>
                   <li>
                     Topical life journey sections with verses from 18
@@ -135,7 +135,7 @@ export default function AboutTheBook() {
                 </ul>
                 <button
                   onClick={handleToggle}
-                  className="mt-2 text-blue-500 hover:underline font-medium"
+                  className="mt-2 text-blue-400 hover:underline font-medium"
                 >
                   Read Less
                 </button>
@@ -143,21 +143,21 @@ export default function AboutTheBook() {
             )}
           </div>
           <div className="mt-8 text-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl shadow transition-all duration-300">
-              <Link
-                to="https://buy.stripe.com/test_aFaeVe3TTa0T1242EoeZ201"
-                target="_blank"
-              >
-                Buy Now
-              </Link>
-            </button>
+            <a
+              href="https://buy.stripe.com/test_aFaeVe3TTa0T1242EoeZ201"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition duration-300"
+            >
+              Buy Now
+            </a>
           </div>
         </div>
       </div>
 
       {/* Reviews Section */}
       <div className="mt-24">
-        <h3 className="text-3xl font-bold text-center mb-10 text-gray-800">
+        <h3 className="text-3xl font-bold text-center mb-10 text-gray-100">
           What Readers Are Saying
         </h3>
         <Swiper
@@ -170,10 +170,10 @@ export default function AboutTheBook() {
         >
           {reviews.map((rev, idx) => (
             <SwiperSlide key={idx}>
-              <article className="bg-white border border-gray-200 rounded-xl shadow-md p-8 text-center space-y-4">
+              <article className="bg-gray-800 border border-gray-700 rounded-2xl shadow-lg p-8 text-center space-y-4">
                 <StarRating count={rev.rating} />
-                <p className="text-gray-700 italic">“{rev.text}”</p>
-                <p className="font-semibold text-gray-900">— {rev.name}</p>
+                <p className="text-gray-300 italic">“{rev.text}”</p>
+                <p className="font-semibold text-gray-100">— {rev.name}</p>
               </article>
             </SwiperSlide>
           ))}
@@ -181,20 +181,20 @@ export default function AboutTheBook() {
       </div>
 
       {/* Submit Review */}
-      <div className="mt-20 max-w-xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-8 shadow">
-        <h3 className="text-2xl font-bold mb-6 text-gray-800 text-center">
+      <div className="mt-20 max-w-xl mx-auto bg-gray-800 border border-gray-700 rounded-2xl p-8 shadow-lg">
+        <h3 className="text-2xl font-bold mb-6 text-gray-100 text-center">
           Leave a Review
         </h3>
 
         {pendingMessage && (
-          <div className="text-green-600 font-medium text-center mb-4">
+          <div className="text-green-500 font-medium text-center mb-4">
             {pendingMessage}
           </div>
         )}
 
         {!preview ? (
           <form
-            className="space-y-4"
+            className="space-y-6"
             onSubmit={async (e) => {
               e.preventDefault();
 
@@ -228,7 +228,7 @@ export default function AboutTheBook() {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700 mb-1"
+                className="block text-sm font-medium text-gray-300 mb-1"
               >
                 Your Name
               </label>
@@ -238,14 +238,14 @@ export default function AboutTheBook() {
                 type="text"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-gray-900 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="rating"
-                className="block text-sm font-medium text-gray-700 mb-1"
+                className="block text-sm font-medium text-gray-300 mb-1"
               >
                 Rating
               </label>
@@ -254,7 +254,7 @@ export default function AboutTheBook() {
                 name="rating"
                 value={form.rating}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-gray-900 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 {[5, 4, 3, 2, 1].map((r) => (
                   <option key={r} value={r}>
@@ -266,7 +266,7 @@ export default function AboutTheBook() {
             <div>
               <label
                 htmlFor="text"
-                className="block text-sm font-medium text-gray-700 mb-1"
+                className="block text-sm font-medium text-gray-300 mb-1"
               >
                 Your Review
               </label>
@@ -276,13 +276,13 @@ export default function AboutTheBook() {
                 rows="4"
                 value={form.text}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-gray-900 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg shadow-lg transition duration-300"
             >
               Preview Review
             </button>
@@ -291,7 +291,7 @@ export default function AboutTheBook() {
           <form
             action="https://submit-form.com/uAsqUWhhu"
             method="POST"
-            className="space-y-4"
+            className="space-y-6"
             target="_blank"
             onSubmit={() => {
               setPendingMessage(
@@ -305,26 +305,26 @@ export default function AboutTheBook() {
             <input type="hidden" name="rating" value={form.rating} />
             <input type="hidden" name="text" value={form.text} />
 
-            <h4 className="text-lg font-semibold text-gray-800">
+            <h4 className="text-lg font-semibold text-gray-100">
               Preview Your Review
             </h4>
-            <article className="bg-white border border-gray-300 rounded-xl p-4">
+            <article className="bg-gray-800 border border-gray-700 rounded-2xl p-4">
               <StarRating count={form.rating} />
-              <p className="text-gray-700 italic">“{form.text}”</p>
-              <p className="font-semibold text-gray-900 mt-2">— {form.name}</p>
+              <p className="text-gray-300 italic">“{form.text}”</p>
+              <p className="font-semibold text-gray-100 mt-2">— {form.name}</p>
             </article>
 
             <div className="flex justify-between">
               <button
                 type="button"
                 onClick={() => setPreview(false)}
-                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-4 rounded-lg"
+                className="bg-gray-700 hover:bg-gray-600 text-gray-300 font-medium py-2 px-4 rounded-lg"
               >
                 Edit
               </button>
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-lg"
               >
                 Confirm & Submit
               </button>

@@ -2,29 +2,32 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="bg-blue-600 text-white px-6 py-4 shadow">
-      <ul className="flex space-x-4">
-        <li>
-          <Link to="/" className="hover:underline">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/about" className="hover:underline">
-            Author
-          </Link>
-        </li>
-        <li>
-          <Link to="/book" className="hover:underline">
-           About The Book
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" className="hover:underline">
-            Contact
-          </Link>
-        </li>
-      </ul>
+    <nav className="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 shadow-md">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+       
+        <ul className="flex space-x-6 text-sm font-medium text-gray-300">
+          <li>
+            <Link to="/" className="hover:text-white transition">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-white transition">
+              Author
+            </Link>
+          </li>
+          <li>
+            <Link to="/book" className="hover:text-white transition">
+              About The Book
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-white transition">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

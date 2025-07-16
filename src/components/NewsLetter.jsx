@@ -33,7 +33,7 @@ const NewsletterSubscription = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-gray-50 py-16 px-4 rounded-2xl">
       <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <div className="text-center mb-6">
           <h2 className="text-3xl font-extrabold text-gray-900">

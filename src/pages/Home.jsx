@@ -32,9 +32,7 @@ export default function Home() {
         <ImageContainer />
       </div>
       <div className="px-6 pb-24">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-blue-800">
-          Upcoming Events
-        </h2>
+        
         <UpcomingEventsCarousel/>
       </div>
 

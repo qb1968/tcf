@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 body {
-  @apply font-sans;
-  background-color: #CBBD93; /* or font-custom if you used that name */
+  @apply font-sans bg-gradient-to-br from-gray-200 via-gray-300 to-blue-400 min-h-screen relative overflow-x-hidden;
+  font-family: 'Poppins', sans-serif;
 }
+
+
 
 
 
