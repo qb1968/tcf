@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <section className="max-w-7xl mx-auto font-custom text-gray-800 ">
       {/* Hero Section */}
-      <div className="relative isolate overflow-hidden bg-gray-900 ">
+      <div className="relative isolate overflow-hidden bg-gray-900 rounded-xl">
         <img
           alt="Scenic beach background"
           src="/images/beach2.jpg"
